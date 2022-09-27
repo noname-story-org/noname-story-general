@@ -1,9 +1,9 @@
 import pyodbc
 import os
 
-username = os.environ['USER_NAME']
-password = os.environ['PASSWORD']
+username = os.getenv('USER_NAME')
+password = os.getenv('PASSWORD')
 
-connection = pyodbc.connect('Driver={CData ODBC Driver for MySQL};' 'User=username;' 'Password=password;' 'Database=NonameStoryDB;' 'Server=localhost;' 'Port=3306;')
+connection = pyodbc.connect('Driver={SQL Server};' 'Server=noname-story.com;' 'Database=NonameStoryDB;' 'UID=username;' 'PWD=password;')
 cursor = connection.cursor()
-
+cursor.execute()
