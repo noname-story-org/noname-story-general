@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
-		<?php
-		$command = escapeshellcmd('Registration.py');
-		$output = shell_exec($command);
-		echo $output;
-		?>
-		
-	</head>
-	<body>
-		<form>
-			
-		</form>
-	</body>
+    <head>
+        <style>
+            body{
+                background-color: darksalmon;
+            }
+            
+            form{
+                font: Garamond;
+                background-color: coral;
+                border-style: solid;
+                border-width: 3px;
+                border-color: chocolate;
+                text-align: center;
+                width: 300px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" autofocus><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"><br>
+      </form> 
+    </body>
 </html>
